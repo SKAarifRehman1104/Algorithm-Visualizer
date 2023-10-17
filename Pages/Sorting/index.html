@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="struct.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <div class="container2">
+      <nav>
+        <div class="container1">
+          <span class="text1">SORITNG VISUALIZER</span>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="container3">
+      <input type="checkbox" name="" id="checkside">
+      <label for="checkside">
+        <i class="ri-settings-4-fill" id="btn"></i>
+        <i class="ri-close-line" id="cancel"></i>
+      </label>
+      <div class="sidebar">
+        <header>Controls</header>
+        <div>
+          <div class="input-field1">
+            <input type="text" id="arr_sz" required />
+            <label for="arr_sz" class="inputdata" min="5" max="25" step=1 value=10 size=10 maxlength=2>Size less than 25:</label>
+          </div>
+        </div>
+        <div><input type="range" id="speed_input" value="70" min="20" max="300" oninput="rangevalue.value=value" stepDown=10 value=60/>
+        <span>Speed:</span>
+        <output id="rangevalue"> 70</output>
+        <span>%</span>
+        </div>
+        <div>
+          <div class="input-field2">
+            <input type="text" id="values" required />
+            <label for="values" class="inputdata">Enter data with space b/w them:</label>
+          </div>
+          <div style="height: 100px;"><button class="side-btn1 newArray">SUBMIT</button></div>
+        </div>
+        </div>
+       
+        <div id="bars" class="flex-container" style="background:rgb(55, 26, 65);"></div>
+    </div>
+    <div class="container4">
+      <button type="button" class="buttons btn btn-ctrl bubbleSort" ><span></span>Bubble Sort</button>
+      <button type="button" class="buttons btn btn-ctrl selectionSort"><span></span>Selection Sort</button>
+      <button type="button"class="buttons btn btn-ctrl insertionSort"><span></span>Insertion Sort</button>
+      <button type="button" class="buttons btn btn-ctrl quickSort"><span></span>Quick Sort</button>
+      <button type="button" class="buttons btn btn-ctrl mergeSort"><span></span>Merge Sort</button>
+    </div>
+    <div class="container5">
+      <div class="dropup">
+        <button class="dropbtn"><span id="dropup">Dropup</span></button>
+        <div class="dropup-content">
+          <a type="button" class="drp-btn btn bubbleSort"><span>Bubble Sort</span></a>
+          <a type="button" class="drp-btn btn selectionSort"><span>Selection Sort</span></a>
+          <a type="button"class="drp-btn btn insertionSort"><span>Insertion Sort</span></a>
+          <a type="button" class="drp-btn btn quickSort"><span>Quick Sort</span></a>
+          <a type="button" class="drp-btn btn mergeSort"><span>Merge Sort</span></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+  </body>
+</html>

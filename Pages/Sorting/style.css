@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+}
+.flex-container{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 101vh;
+    transition: all.5s;
+    justify-content: center;
+    transition: 2s all ease;
+    padding-top: 2em;
+    padding-bottom: 30px;
+}
+
+.flex-item{
+    background: cyan;
+    border: 1pt solid black;
+    width: 25px;
+    height: 22em;
+    transition: 0.1s all ease;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#input{
+    padding: 0;
+}
+
+#size{
+    padding-right: 25px;
+}
+
+.newArray{
+    display: block;
+}
+
+nav{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
